@@ -30,6 +30,7 @@ class DeckTest {
 
         // Assert that there are 52 cards after removing duplicates
         assertEquals(52, set.size());
+
         // Assert that the card ids are between 1 and 52
         assertEquals(1, min);
         assertEquals(52, max);

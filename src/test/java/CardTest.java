@@ -14,9 +14,20 @@ class CardTest {
     void testCardCodes() {
         assertEquals("Ah", card1.code);
         assertEquals("3s", card2.code);
-        assertEquals("10d", card3.code);
+        assertEquals("Td", card3.code);
         assertEquals("Jc", card4.code);
         assertEquals("Kh", card5.code);
+    }
+
+    @Test
+    void testCardStrigConstructor(){
+        assertEquals("Ah", new Card("Ah").code);
+        assertEquals("3s", new Card("3s").code);
+        assertEquals("Td", new Card("Td").code);
+        assertEquals("Jc", new Card("Jc").code);
+        assertEquals("Kh", new Card("Kh").code);
+        assertEquals("Qs", new Card("Qs").code);
+        assertEquals("5d", new Card("5d").code);
     }
 
     @Test

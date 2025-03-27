@@ -13,9 +13,9 @@ public class Main {
         Deck deck = new Deck();
         deck.print();
 //
-//        for (Card crd : deck.deal(53)) {
-//            System.out.println(crd.toString());
-//        }
+        for (Card crd : deck.deal(52)) {
+            System.out.println(crd.intValue);
+        }
 //
 //        deck.print();
 

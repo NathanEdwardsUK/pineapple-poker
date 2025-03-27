@@ -7,12 +7,12 @@ public class Board {
 
     private ArrayList<Card> cards = new ArrayList<>();
 
-    public void addCards(Card[] newCards) throws Exception {
+    public void addCards(Card[] newCards) {
         this.cards.addAll(List.of(newCards));
 
         if (this.cards.size() > 5) {
             this.print();
-            throw new Exception("Board cannot contain more than 5 cards");
+            throw new IllegalStateException("Board cannot contain more than 5 cards");
         }
     }
 
