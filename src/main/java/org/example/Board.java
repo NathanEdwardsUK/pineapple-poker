@@ -1,0 +1,30 @@
+package org.example;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Board {
+
+    private ArrayList<Card> cards = new ArrayList<>();
+
+    public void addCards(Card[] newCards) throws Exception {
+        this.cards.addAll(List.of(newCards));
+
+        if (this.cards.size() > 5) {
+            this.print();
+            throw new Exception("Board cannot contain more than 5 cards");
+        }
+    }
+
+    public ArrayList<Card> getCards () {
+        return this.cards;
+    }
+
+    public void print() {
+        System.out.println("Board:");
+
+        for (int i = 0; i < this.cards.size(); i++) {
+            System.out.println(i + ": " + this.cards.get(i).toString());
+        }
+    }
+}

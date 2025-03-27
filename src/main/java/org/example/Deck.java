@@ -18,6 +18,10 @@ public class Deck {
         this.shuffle();
     }
 
+    public ArrayList<Card> getCards() {
+        return this.cards;
+    }
+
     public void shuffle() {
         Collections.shuffle(this.cards);
     }
@@ -36,6 +40,8 @@ public class Deck {
     }
 
     public void print() {
+        System.out.println("Deck:");
+
         for (int i = 0; i < this.cards.size(); i++) {
             System.out.println(i + ": " + this.cards.get(i).toString());
         }
