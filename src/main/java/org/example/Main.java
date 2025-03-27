@@ -1,5 +1,6 @@
 package org.example;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class Main {
@@ -10,12 +11,12 @@ public class Main {
 //        System.out.println(card.intValue);
 //        System.out.println(card.code);
 //
-        Deck deck = new Deck();
-        deck.print();
+//        Deck deck = new Deck();
+//        deck.print();
 //
-        for (Card crd : deck.deal(52)) {
-            System.out.println(crd.intValue);
-        }
+//        for (Card crd : deck.deal(52)) {
+//            System.out.println(crd.intValue);
+//        }
 //
 //        deck.print();
 
@@ -27,6 +28,9 @@ public class Main {
 //        board.print();
 //        board.addCards(deck.deal(3));
 //        board.print();
+
+        HandEvaluator HEv = new HandEvaluator();
+        ArrayList<Card> cards;
 
     }
 }
